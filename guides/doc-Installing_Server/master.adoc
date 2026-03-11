@@ -40,6 +40,7 @@ ifdef::foremanctl[]
 hello foremanctl world
 endif::foremanctl[]
 
+ifndef::foremanctl[]
 ifdef::katello,orcharhino,satellite[]
 include::common/modules/proc_tuning-with-predefined-profiles.adoc[leveloffset=+1]
 endif::[]
@@ -94,6 +95,7 @@ endif::[]
 
 [appendix]
 include::common/modules/proc_restoring-manual-changes-overwritten-by-a-puppet-run.adoc[leveloffset=+1]
+endif::foremanctl[]
 endif::[]
 
 ifndef::orcharhino,satellite[]
