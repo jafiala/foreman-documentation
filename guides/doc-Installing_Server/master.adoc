@@ -34,6 +34,11 @@ include::common/assembly_planning-project-server-installation.adoc[leveloffset=+
 include::common/assembly_preparing-environment-for-project-server-installation.adoc[leveloffset=+1]
 
 include::common/assembly_installing-server-connected.adoc[leveloffset=+1]
+endif::[]
+
+ifdef::foremanctl[]
+hello foremanctl world
+endif::[]
 
 ifdef::katello,orcharhino,satellite[]
 include::common/modules/proc_tuning-with-predefined-profiles.adoc[leveloffset=+1]
@@ -89,7 +94,6 @@ endif::[]
 
 [appendix]
 include::common/modules/proc_restoring-manual-changes-overwritten-by-a-puppet-run.adoc[leveloffset=+1]
-endif::[]
 endif::[]
 
 ifndef::orcharhino,satellite[]
