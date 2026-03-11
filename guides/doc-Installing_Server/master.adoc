@@ -37,7 +37,7 @@ include::common/assembly_installing-server-connected.adoc[leveloffset=+1]
 endif::foremanctl[]
 
 ifdef::foremanctl[]
-hello foremanctl world
+//add includes to foremanctl assemblies here
 endif::foremanctl[]
 
 ifndef::foremanctl[]
