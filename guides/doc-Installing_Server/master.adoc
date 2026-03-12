@@ -11,7 +11,7 @@ ifndef::orcharhino,satellite[]
 ifdef::foremanctl[]
 :FeatureName: The `foremanctl` deployment utility
 include::common/modules/snip_technology-preview.adoc[]
-endif::foremanctl[]
+endif::[]
 endif::[]
 
 // This guide is not ready for stable releases
@@ -34,11 +34,14 @@ include::common/assembly_planning-project-server-installation.adoc[leveloffset=+
 include::common/assembly_preparing-environment-for-project-server-installation.adoc[leveloffset=+1]
 
 include::common/assembly_installing-server-connected.adoc[leveloffset=+1]
-endif::foremanctl[]
+endif::[]
 
 ifdef::foremanctl[]
 //add includes to foremanctl assemblies here
-endif::foremanctl[]
+
+include::common/assembly_customizing-the-installation.adoc[leveloffset=+1]
+
+endif::[]
 
 ifndef::foremanctl[]
 ifdef::katello,orcharhino,satellite[]
@@ -95,7 +98,7 @@ endif::[]
 
 [appendix]
 include::common/modules/proc_restoring-manual-changes-overwritten-by-a-puppet-run.adoc[leveloffset=+1]
-endif::foremanctl[]
+endif::[]
 endif::[]
 
 ifndef::orcharhino,satellite[]
