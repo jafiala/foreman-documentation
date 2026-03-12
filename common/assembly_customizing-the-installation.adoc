@@ -1,0 +1,6 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="customizing-the-installation"]
+= Customizing the installation
+
+[role="_abstract"]
