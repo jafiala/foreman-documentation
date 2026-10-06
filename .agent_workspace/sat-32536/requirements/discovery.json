@@ -1,0 +1,146 @@
+{
+  "ticket": "SAT-32536",
+  "ticket_summary": "Enable synchronization and management of PyPI-type repositories",
+  "release": "6.21.0",
+  "source_date": "2026-08-17",
+  "sources_consulted": {
+    "jira_tickets": [
+      {"key": "SAT-32536", "url": "https://redhat.atlassian.net/browse/SAT-32536", "summary": "Enable synchronization and management of PyPI-type repositories (Epic)"},
+      {"key": "SAT-35510", "url": "https://redhat.atlassian.net/browse/SAT-35510", "summary": "Enable synchronization and management of PyPI-type repositories (Feature / parent)"},
+      {"key": "SAT-33274", "url": "https://redhat.atlassian.net/browse/SAT-33274", "summary": "[DOC] Add Python-type repositories to Satellite docs"},
+      {"key": "SAT-33275", "url": "https://redhat.atlassian.net/browse/SAT-33275", "summary": "Create Python package type page"},
+      {"key": "SAT-36510", "url": "https://redhat.atlassian.net/browse/SAT-36510", "summary": "As a python content user, I can specify a download policy"},
+      {"key": "SAT-36511", "url": "https://redhat.atlassian.net/browse/SAT-36511", "summary": "Document how to sync and consume PyPI content from Satellite (Closed)"},
+      {"key": "SAT-36514", "url": "https://redhat.atlassian.net/browse/SAT-36514", "summary": "Enable the Python content type by default in Satellite and Capsule"},
+      {"key": "SAT-43766", "url": "https://redhat.atlassian.net/browse/SAT-43766", "summary": "Python repo distribution path is displayed incorrectly as /pulp/content/"},
+      {"key": "SAT-49247", "url": "https://redhat.atlassian.net/browse/SAT-49247", "summary": "Add ISS Support for PyPI"}
+    ],
+    "pull_requests": [
+      {"url": "https://github.com/Katello/katello/pull/11842", "title": "Download policy support for Python repositories (fetch failed: GitHub 401 Bad credentials)", "files_changed": null},
+      {"url": "https://github.com/Katello/katello/pull/11858", "title": "Download policy support for Python repositories (fetch failed: GitHub 401 Bad credentials)", "files_changed": null}
+    ],
+    "specifications": [
+      {"url": "https://access.redhat.com/solutions/4461511", "title": "[KCS] How to synchronize and manage PyPi-type repositories in Red Hat Satellite 6 ?", "type": "other"},
+      {"url": "https://docs.theforeman.org/nightly/Managing_Content/index-katello.html#Managing_Python_Type_Content_content-management", "title": "Upstream Foreman docs: Managing Python-Type Content", "type": "other"}
+    ],
+    "existing_docs": [
+      {"path": "guides/common/assembly_managing-python-content-in-project.adoc", "relevance": "Existing assembly for managing Python content; target for enablement/first-class updates"},
+      {"path": "guides/common/modules/con_managing-python-content-in-project.adoc", "relevance": "Concept intro; contains ifdef::orcharhino guard"},
+      {"path": "guides/common/modules/proc_synchronizing-python-repositories.adoc", "relevance": "Covers syncing Python repos, include/exclude options; target for full-PyPI sync caveats and download policy"},
+      {"path": "guides/common/modules/con_consuming-python-content-on-hosts.adoc", "relevance": "Host consumption of Python content; contains ifdef::orcharhino guard"},
+      {"path": "guides/common/modules/proc_downloading-files-to-a-host-from-a-python-repository-by-using-cli.adoc", "relevance": "Consuming Python content on hosts via CLI"},
+      {"path": "guides/common/modules/proc_downloading-files-to-a-host-from-a-python-repository-by-using-web-ui.adoc", "relevance": "Consuming Python content on hosts via web UI"},
+      {"path": "guides/common/modules/proc_installing-python-packages-on-a-host-from-project-server.adoc", "relevance": "Installing Python packages on a host"},
+      {"path": "guides/common/modules/proc_viewing-available-python-packages.adoc", "relevance": "Viewing available Python packages; related to new Python Packages UI page"},
+      {"path": "guides/common/modules/proc_uploading-content-to-a-python-repository-by-using-cli.adoc", "relevance": "Uploading Python content via CLI"},
+      {"path": "guides/common/modules/proc_uploading-content-to-a-python-repository-by-using-web-ui.adoc", "relevance": "Uploading Python content via web UI"}
+    ]
+  },
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "title": "Python-type content fully enabled and first-class in Satellite",
+      "priority": "high",
+      "category": "new_feature",
+      "sources": [
+        {"type": "jira", "key": "SAT-32536", "url": "https://redhat.atlassian.net/browse/SAT-32536"},
+        {"type": "jira", "key": "SAT-36514", "url": "https://redhat.atlassian.net/browse/SAT-36514"},
+        {"type": "jira", "key": "SAT-33274", "url": "https://redhat.atlassian.net/browse/SAT-33274"}
+      ],
+      "one_line_summary": "Python (PyPI) content is enabled by default in Satellite and Capsule as a first-class content type, requiring removal of conditional guards so all Python-repo docs apply to Satellite."
+    },
+    {
+      "id": "REQ-002",
+      "title": "Synchronize and consume PyPI content on Satellite",
+      "priority": "high",
+      "category": "new_feature",
+      "sources": [
+        {"type": "jira", "key": "SAT-33274", "url": "https://redhat.atlassian.net/browse/SAT-33274"},
+        {"type": "jira", "key": "SAT-36511", "url": "https://redhat.atlassian.net/browse/SAT-36511"}
+      ],
+      "one_line_summary": "Document syncing upstream PyPI repositories (including whole-of-PyPI sync caveats and include/exclude behavior) and configuring hosts to consume Python content from Satellite."
+    },
+    {
+      "id": "REQ-003",
+      "title": "Download policy support for Python repositories",
+      "priority": "medium",
+      "category": "enhancement",
+      "sources": [
+        {"type": "jira", "key": "SAT-36510", "url": "https://redhat.atlassian.net/browse/SAT-36510"},
+        {"type": "pr", "number": 11842, "url": "https://github.com/Katello/katello/pull/11842"},
+        {"type": "pr", "number": 11858, "url": "https://github.com/Katello/katello/pull/11858"}
+      ],
+      "one_line_summary": "Python repositories can now have a download policy set, matching other content types."
+    },
+    {
+      "id": "REQ-004",
+      "title": "Inter-Server Sync (ISS) import/export support for PyPI",
+      "priority": "medium",
+      "category": "new_feature",
+      "sources": [
+        {"type": "jira", "key": "SAT-49247", "url": "https://redhat.atlassian.net/browse/SAT-49247"}
+      ],
+      "one_line_summary": "Python repositories can be exported and imported (including incremental export) using the default ISS format."
+    },
+    {
+      "id": "REQ-005",
+      "title": "Corrected Python repository distribution (Published At) path",
+      "priority": "low",
+      "category": "bug_fix",
+      "sources": [
+        {"type": "jira", "key": "SAT-43766", "url": "https://redhat.atlassian.net/browse/SAT-43766"}
+      ],
+      "one_line_summary": "The Published At URL for Python repositories now shows the /pypi/ distribution path instead of /pulp/content/."
+    },
+    {
+      "id": "REQ-006",
+      "title": "Dedicated Python Packages content type page in the web UI",
+      "priority": "low",
+      "category": "enhancement",
+      "sources": [
+        {"type": "jira", "key": "SAT-33275", "url": "https://redhat.atlassian.net/browse/SAT-33275"}
+      ],
+      "one_line_summary": "A dedicated Python Packages page is added under Content > Content Types in the web UI navigation, moved out of Other Content Types."
+    }
+  ],
+  "related_tickets": {
+    "parent": {"key": "SAT-35510", "url": "https://redhat.atlassian.net/browse/SAT-35510", "summary": "Enable synchronization and management of PyPI-type repositories (Feature)"},
+    "ancestors": [
+      {"key": "SAT-35510", "url": "https://redhat.atlassian.net/browse/SAT-35510", "summary": "Enable synchronization and management of PyPI-type repositories (Feature)"}
+    ],
+    "children": [
+      {"key": "SAT-33270", "url": "https://redhat.atlassian.net/browse/SAT-33270", "summary": "[QE] Validate upstream Python repository sync"},
+      {"key": "SAT-33271", "url": "https://redhat.atlassian.net/browse/SAT-33271", "summary": "[QE] Validate download and install for hosted Python-type repositories"},
+      {"key": "SAT-33273", "url": "https://redhat.atlassian.net/browse/SAT-33273", "summary": "[QE] Validate Python-type content upload to Satellite"},
+      {"key": "SAT-33275", "url": "https://redhat.atlassian.net/browse/SAT-33275", "summary": "Create Python package type page"},
+      {"key": "SAT-36514", "url": "https://redhat.atlassian.net/browse/SAT-36514", "summary": "Enable the Python content type by default in Satellite and Capsule"},
+      {"key": "SAT-49247", "url": "https://redhat.atlassian.net/browse/SAT-49247", "summary": "Add ISS Support for PyPI"},
+      {"key": "SAT-33274", "url": "https://redhat.atlassian.net/browse/SAT-33274", "summary": "[DOC] Add Python-type repositories to Satellite docs"},
+      {"key": "SAT-36510", "url": "https://redhat.atlassian.net/browse/SAT-36510", "summary": "As a python content user, I can specify a download policy"},
+      {"key": "SAT-43766", "url": "https://redhat.atlassian.net/browse/SAT-43766", "summary": "Python repo distribution path is displayed incorrectly as /pulp/content/"},
+      {"key": "SAT-36511", "url": "https://redhat.atlassian.net/browse/SAT-36511", "summary": "Document how to sync and consume PyPI content from Satellite"},
+      {"key": "SAT-36512", "url": "https://redhat.atlassian.net/browse/SAT-36512", "summary": "[QE] Automated test: python content syncing + distribution"},
+      {"key": "SAT-36513", "url": "https://redhat.atlassian.net/browse/SAT-36513", "summary": "[QE] Automated test: python content uploads"},
+      {"key": "SAT-37930", "url": "https://redhat.atlassian.net/browse/SAT-37930", "summary": "Refinement SAT-32536"}
+    ],
+    "siblings": [],
+    "linked": [],
+    "web_links": [
+      {"url": "https://access.redhat.com/solutions/4461511", "title": "[KCS] How to synchronize and manage PyPi-type repositories in Red Hat Satellite 6 ?"}
+    ]
+  },
+  "persisted_sources": {
+    "comments_file": "/home/jafiala/Documents/foreman-documentation/.agent_workspace/sat-32536/requirements.json",
+    "comments_brief_file": "/home/jafiala/Documents/foreman-documentation/.agent_workspace/sat-32536/comments-brief.md",
+    "comments_total": 2,
+    "attachment_dir": "/home/jafiala/Documents/foreman-documentation/.agent_workspace/sat-32536/requirements/attachments/",
+    "attachment_count": 0,
+    "spec_files": [],
+    "diff_files": []
+  },
+  "errors": [
+    "GitHub PR fetch failed for https://github.com/Katello/katello/pull/11842 (git_pr_reader info): github.GithubException.BadCredentialsException: 401 Bad credentials",
+    "GitHub PR fetch failed for https://github.com/Katello/katello/pull/11858 (git_pr_reader info): github.GithubException.BadCredentialsException: 401 Bad credentials",
+    "PR URLs were not auto-discovered from the JIRA graph; they were extracted from the SAT-36510 ticket description. Diffs could not be persisted due to the GitHub 401 error."
+  ]
+}

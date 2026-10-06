@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "step": "security-review",
+  "ticket": "SAT-32536",
+  "completed_at": "2026-10-06T15:50:00Z",
+  "scanner_findings": "3",
+  "critical_findings": "0",
+  "categories": {
+    "ip": "0",
+    "email": "0",
+    "credential": "0",
+    "url": "3",
+    "mac": "0",
+    "internal_hostname": "0"
+  },
+  "context_size_bytes": "3735"
+}

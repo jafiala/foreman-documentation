@@ -32,4 +32,11 @@ $ hammer repository info \
 --organization-id _My_Organization_ID_ \
 --product "__My_{customproductFirstCap}__"
 ----
++
+[NOTE]
+====
+{Project} publishes Python repositories under the `/pypi/` path, so the *Published At* URL shown in the repository information differs from the generic `/pulp/content/` path shown in the following example.
+Use the full *Published At* URL from the repository information as the download URL instead of adapting the example path.
+====
++
 include::snip_step-downloading-file-from-server.adoc[]

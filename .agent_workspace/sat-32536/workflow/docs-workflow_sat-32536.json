@@ -1,0 +1,26 @@
+{
+  "workflow_type": "docs-workflow",
+  "ticket": "SAT-32536",
+  "base_path": "/home/jafiala/Documents/foreman-documentation/.agent_workspace/sat-32536",
+  "status": "completed",
+  "created_at": "2026-10-06T15:13:56Z",
+  "updated_at": "2026-10-06T15:50:00Z",
+  "options": {
+    "format": "adoc",
+    "draft": false,
+    "create_merge_request": false,
+    "pr_urls": [],
+    "source": null,
+    "additional_sources": []
+  },
+  "step_order": ["requirements", "planning", "writing", "technical-review", "style-review", "security-review", "create-merge-request"],
+  "steps": {
+    "requirements": { "status": "completed", "output": ".agent_workspace/sat-32536/requirements/", "result": { "title": "Documentation Requirements", "requirement_count": 6 } },
+    "planning": { "status": "completed", "output": ".agent_workspace/sat-32536/planning/", "result": { "module_count": 14, "new_modules": 0, "updated_modules": 16 } },
+    "writing": { "status": "completed", "output": ".agent_workspace/sat-32536/writing/", "result": { "files_count": 11, "mode": "update-in-place", "format": "adoc" } },
+    "technical-review": { "status": "completed", "output": ".agent_workspace/sat-32536/technical-review/", "result": { "confidence": "HIGH", "iterations": 2, "severity_counts": { "critical": 0, "significant": 0, "minor": 1, "sme": 4 } } },
+    "style-review": { "status": "completed", "output": ".agent_workspace/sat-32536/style-review/", "result": { "edits_applied": 0, "clean": true } },
+    "security-review": { "status": "completed", "output": ".agent_workspace/sat-32536/security-review/", "result": { "scanner_findings": 3, "critical_findings": 0 } },
+    "create-merge-request": { "status": "skipped", "output": null, "result": null }
+  }
+}

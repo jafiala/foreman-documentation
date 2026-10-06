@@ -9,4 +9,7 @@ endif::[]
 * Docker content
 * {customfiletypeFirstCap} content
 * Kickstart repositories
+ifdef::katello,orcharhino,satellite[]
+* Python content
+endif::[]
 * Yum content

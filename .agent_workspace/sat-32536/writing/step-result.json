@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "step": "writing",
+  "ticket": "SAT-32536",
+  "completed_at": "2026-10-06T15:33:00Z",
+  "files": [
+    "/home/jafiala/Documents/foreman-documentation/guides/doc-Managing_Content/master.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/doc-Managing_Hosts/master.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/con_content-flow-in-project.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/con_download-policies-overview.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/proc_synchronizing-python-repositories.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/snip_content-types-export.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/snip_content-types-syncable-export.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/proc_installing-python-packages-on-a-host-from-project-server.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/proc_viewing-available-python-packages.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/proc_downloading-files-to-a-host-from-a-python-repository-by-using-web-ui.adoc",
+    "/home/jafiala/Documents/foreman-documentation/guides/common/modules/proc_downloading-files-to-a-host-from-a-python-repository-by-using-cli.adoc"
+  ],
+  "mode": "update-in-place",
+  "format": "adoc",
+  "context_size_bytes": 7742
+}

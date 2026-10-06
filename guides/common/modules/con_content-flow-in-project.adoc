@@ -13,7 +13,7 @@ External content sources::
 You can configure many content sources with {Project}.
 The supported content sources include the Red{nbsp}Hat Customer Portal,
 ifdef::satellite[]
-custom Yum repositories,
+custom Yum repositories, PyPI,
 endif::[]
 ifndef::satellite[]
 custom Deb and Yum repositories, PyPI,

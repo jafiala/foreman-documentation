@@ -10,5 +10,4 @@ Review Python packages in the Library lifecycle environment of {Project} to veri
 * Python packages are synchronized or uploaded to your organization in {Project}.
 
 .Procedure
-. In the {ProjectWebUI}, navigate to *Content* > *Content Types* > *Other Content Types*.
-. In the *Type* menu, select *Python Packages*.
+* In the {ProjectWebUI}, navigate to *Content* > *Content Types* > *Python Packages*.

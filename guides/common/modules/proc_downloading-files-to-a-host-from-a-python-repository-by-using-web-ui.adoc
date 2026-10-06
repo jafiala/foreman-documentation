@@ -23,4 +23,10 @@ For more information, see {ManagingOrganizationsLocationsDocURL}Creating_an_Orga
 . Optional: Select the *Unprotected* checkbox to access the repository published through HTTP.
 . Copy the *Published At* URL.
 +
+[NOTE]
+====
+{Project} publishes Python repositories under the `/pypi/` path, so the *Published At* URL that you copy differs from the generic `/pulp/content/` path shown in the following example.
+Use the full *Published At* URL that you copied as the download URL instead of adapting the example path.
+====
++
 include::snip_step-downloading-file-from-server.adoc[]

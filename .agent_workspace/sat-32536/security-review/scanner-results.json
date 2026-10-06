@@ -1,0 +1,43 @@
+{
+  "command": "scan",
+  "summary": {
+    "files_scanned": 11,
+    "files_with_findings": 3,
+    "total_findings": 3,
+    "by_category": {
+      "url": 3
+    },
+    "by_severity": {
+      "warning": 3
+    }
+  },
+  "findings": [
+    {
+      "file": "guides/common/modules/proc_synchronizing-python-repositories.adoc",
+      "line": 18,
+      "category": "url",
+      "matched": "https://pypi.org",
+      "context": ". In the *Upstream URL* field, enter the URL for the upstream content source, for example, `https://pypi.org`.",
+      "severity": "warning",
+      "suggestion": "Use example.com or a *.redhat.com domain"
+    },
+    {
+      "file": "guides/common/modules/proc_downloading-files-to-a-host-from-a-python-repository-by-using-web-ui.adoc",
+      "line": 14,
+      "category": "url",
+      "matched": "katello-server-ca.crt",
+      "context": "** The `katello-server-ca.crt`.",
+      "severity": "warning",
+      "suggestion": "Use example.com or a *.redhat.com domain"
+    },
+    {
+      "file": "guides/common/modules/proc_downloading-files-to-a-host-from-a-python-repository-by-using-cli.adoc",
+      "line": 14,
+      "category": "url",
+      "matched": "katello-server-ca.crt",
+      "context": "** The `katello-server-ca.crt`.",
+      "severity": "warning",
+      "suggestion": "Use example.com or a *.redhat.com domain"
+    }
+  ]
+}

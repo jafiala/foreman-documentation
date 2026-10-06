@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "step": "style-review",
+  "ticket": "SAT-32536",
+  "completed_at": "2026-10-06T15:47:00Z",
+  "context_size_bytes": 9347
+}

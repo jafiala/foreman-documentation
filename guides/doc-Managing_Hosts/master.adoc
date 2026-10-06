@@ -88,7 +88,7 @@ ifndef::containerized[]
 include::common/assembly_installing-flatpak-applications-on-hosts.adoc[leveloffset=+1]
 endif::[]
 
-ifdef::katello,orcharhino[]
+ifdef::katello,orcharhino,satellite[]
 include::common/assembly_consuming-python-content-on-hosts.adoc[leveloffset=+1]
 endif::[]
 

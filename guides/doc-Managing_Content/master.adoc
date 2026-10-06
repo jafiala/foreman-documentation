@@ -105,7 +105,7 @@ include::common/assembly_managing-ansible-content.adoc[leveloffset=+1]
 include::common/assembly_managing-custom-file-type-content-in-project.adoc[leveloffset=+1]
 endif::[]
 
-ifdef::katello,orcharhino[]
+ifdef::katello,orcharhino,satellite[]
 include::common/assembly_managing-python-content-in-project.adoc[leveloffset=+1]
 endif::[]
 
