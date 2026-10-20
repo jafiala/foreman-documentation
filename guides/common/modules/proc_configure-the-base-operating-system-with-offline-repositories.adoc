@@ -9,7 +9,7 @@ Use this procedure to configure offline repositories for {RHEL} 10 and {ProjectN
 ifndef::installing-satellite-server-disconnected[]
 .Prerequisites
 * You have downloaded the base operating system and {ProjectName} images.
-For more information about downloading the DVDs, see {InstallingServerDisconnectedDocURL}download-the-binary-dvd-images[Downloading the binary DVD images].
+For more information about downloading the DVDs, see {InstallingServerDisconnectedDocURL}download-the-binary-dvd-images[Download the binary DVD images].
 endif::[]
 
 .Procedure
